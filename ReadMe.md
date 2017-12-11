@@ -55,7 +55,7 @@ The components I implemented should give you what you need to implement your own
 are certainly things you can do much differently than what is provided in the example
 components.
 
-More information, tutorials, and demos along with API documentation are available at [project homepage](http://pushbuttonreceivecode.com/page/libs).
+More information, tutorials, and demos along with API documentation are available at [project homepage](http://pushbuttonreceivecode.com).
 
 Steeriously does not use a build system. However, you can simply place the files in your project and add
 include paths accordingly using your favorite IDE. Documentation is already built - that is why the file
