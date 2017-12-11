@@ -1,0 +1,107 @@
+\hypertarget{classsteer_1_1_offset_pursuit_component}{\section{steer\-:\-:Offset\-Pursuit\-Component Class Reference}
+\label{classsteer_1_1_offset_pursuit_component}\index{steer\-::\-Offset\-Pursuit\-Component@{steer\-::\-Offset\-Pursuit\-Component}}
+}
+
+
+An example implementation of the offset pursuit steering behavior.  
+
+
+
+
+{\ttfamily \#include $<$Offset\-Pursuit\-Component.\-hpp$>$}
+
+Inheritance diagram for steer\-:\-:Offset\-Pursuit\-Component\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsteer_1_1_offset_pursuit_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_aff55362cf15ea271b8563f7509a11ef5}{{\bfseries Offset\-Pursuit\-Component} (\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$params)}\label{classsteer_1_1_offset_pursuit_component_aff55362cf15ea271b8563f7509a11ef5}
+
+\item 
+void \hyperlink{classsteer_1_1_offset_pursuit_component_afa17a1f914ea3f8c06e65c13ab6f4b21}{set\-Weight} (const float weight)
+\begin{DoxyCompactList}\small\item\em Set the value of the weight multiplier for the Offset\-Pursuit component. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_a9d2e14e78dfbdc3ef6791aa2771dc126}{float \hyperlink{classsteer_1_1_offset_pursuit_component_a9d2e14e78dfbdc3ef6791aa2771dc126}{get\-Weight} () const }\label{classsteer_1_1_offset_pursuit_component_a9d2e14e78dfbdc3ef6791aa2771dc126}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the weight multiplier for the Offset\-Pursuit component. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_a24467edbaec6e36e8291669303ab3856}{void \hyperlink{classsteer_1_1_offset_pursuit_component_a24467edbaec6e36e8291669303ab3856}{set\-Rotation} (float r)}\label{classsteer_1_1_offset_pursuit_component_a24467edbaec6e36e8291669303ab3856}
+
+\begin{DoxyCompactList}\small\item\em Set the value of the Offset\-Pursuit component rotation. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_a85cc7c083e1f6a4de0ffab4d49aa48a1}{float \hyperlink{classsteer_1_1_offset_pursuit_component_a85cc7c083e1f6a4de0ffab4d49aa48a1}{get\-Rotation} ()}\label{classsteer_1_1_offset_pursuit_component_a85cc7c083e1f6a4de0ffab4d49aa48a1}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the Offset\-Pursuit component rotation. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classsteer_1_1_offset_pursuit_component_a748847de5cec80589b12b35214c5b5e2}{on} (\hyperlink{namespacesteer_afe6e72f8f8088962727051501181acbe}{steer\-::behavior\-Type} behavior)
+\begin{DoxyCompactList}\small\item\em This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_ab00f431004a8582d9e92b1f5b866e960}{void {\bfseries Offset\-Pursuit\-On} ()}\label{classsteer_1_1_offset_pursuit_component_ab00f431004a8582d9e92b1f5b866e960}
+
+\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_aa637ba4d4f93d015dfa433325d18aaa4}{bool {\bfseries is\-Offset\-Pursuit\-On} ()}\label{classsteer_1_1_offset_pursuit_component_aa637ba4d4f93d015dfa433325d18aaa4}
+
+\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_af21028fac719260959481e2296e5a517}{void {\bfseries offset\-Pursuit\-Off} ()}\label{classsteer_1_1_offset_pursuit_component_af21028fac719260959481e2296e5a517}
+
+\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_a409340ab402b0c0b2df5861cc91f7749}{void {\bfseries set\-Leader} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$l)}\label{classsteer_1_1_offset_pursuit_component_a409340ab402b0c0b2df5861cc91f7749}
+
+\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_a5bb14173697216a63b12edcc781b0625}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Leader} () const }\label{classsteer_1_1_offset_pursuit_component_a5bb14173697216a63b12edcc781b0625}
+
+\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_a7f1a09cd6bd639a433d997f2e87cc269}{virtual \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_offset_pursuit_component_a7f1a09cd6bd639a433d997f2e87cc269}{Calculate} ()}\label{classsteer_1_1_offset_pursuit_component_a7f1a09cd6bd639a433d997f2e87cc269}
+
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating the steering vector. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_offset_pursuit_component_ab2734e526e86322deae566212982cb0e}{void {\bfseries Update} (float dt)}\label{classsteer_1_1_offset_pursuit_component_ab2734e526e86322deae566212982cb0e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An example implementation of the offset pursuit steering behavior. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsteer_1_1_offset_pursuit_component_a748847de5cec80589b12b35214c5b5e2}{\index{steer\-::\-Offset\-Pursuit\-Component@{steer\-::\-Offset\-Pursuit\-Component}!on@{on}}
+\index{on@{on}!steer::OffsetPursuitComponent@{steer\-::\-Offset\-Pursuit\-Component}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool steer\-::\-Offset\-Pursuit\-Component\-::on (
+\begin{DoxyParamCaption}
+\item[{{\bf steer\-::behavior\-Type}}]{behavior}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classsteer_1_1_offset_pursuit_component_a748847de5cec80589b12b35214c5b5e2}
+
+
+This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & -\/ enum behavior\-Type. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classsteer_1_1_agent_a707204e49e6519c7a8ea0f3ded608d98}{steer\-::\-Agent}.
+
+\hypertarget{classsteer_1_1_offset_pursuit_component_afa17a1f914ea3f8c06e65c13ab6f4b21}{\index{steer\-::\-Offset\-Pursuit\-Component@{steer\-::\-Offset\-Pursuit\-Component}!set\-Weight@{set\-Weight}}
+\index{set\-Weight@{set\-Weight}!steer::OffsetPursuitComponent@{steer\-::\-Offset\-Pursuit\-Component}}
+\subsubsection[{set\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}void steer\-::\-Offset\-Pursuit\-Component\-::set\-Weight (
+\begin{DoxyParamCaption}
+\item[{const float}]{weight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsteer_1_1_offset_pursuit_component_afa17a1f914ea3f8c06e65c13ab6f4b21}
+
+
+Set the value of the weight multiplier for the Offset\-Pursuit component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & -\/ a plain old float. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/components/Offset\-Pursuit\-Component.\-hpp\item 
+src/steeriously/components/Offset\-Pursuit\-Component.\-cpp\end{DoxyCompactItemize}

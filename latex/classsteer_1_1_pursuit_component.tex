@@ -1,0 +1,110 @@
+\hypertarget{classsteer_1_1_pursuit_component}{\section{steer\-:\-:Pursuit\-Component Class Reference}
+\label{classsteer_1_1_pursuit_component}\index{steer\-::\-Pursuit\-Component@{steer\-::\-Pursuit\-Component}}
+}
+
+
+An example implementation of the pursuit steering behavior.  
+
+
+
+
+{\ttfamily \#include $<$Pursuit\-Component.\-hpp$>$}
+
+Inheritance diagram for steer\-:\-:Pursuit\-Component\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsteer_1_1_pursuit_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_pursuit_component_a0042fb61e8bdad810446a3d59ac495c4}{{\bfseries Pursuit\-Component} (\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$params)}\label{classsteer_1_1_pursuit_component_a0042fb61e8bdad810446a3d59ac495c4}
+
+\item 
+void \hyperlink{classsteer_1_1_pursuit_component_a23cb54c3718028ec7859f4350fe6dda1}{set\-Weight} (const float weight)
+\begin{DoxyCompactList}\small\item\em Set the value of the weight multiplier for the Pursuit component. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_pursuit_component_ae361d87e084ece53b270267081e423e0}{float \hyperlink{classsteer_1_1_pursuit_component_ae361d87e084ece53b270267081e423e0}{get\-Weight} () const }\label{classsteer_1_1_pursuit_component_ae361d87e084ece53b270267081e423e0}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the weight multiplier for the Pursuit component. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_pursuit_component_a0098d8e1f606fd40377c8bcf581efd39}{void \hyperlink{classsteer_1_1_pursuit_component_a0098d8e1f606fd40377c8bcf581efd39}{set\-Rotation} (float r)}\label{classsteer_1_1_pursuit_component_a0098d8e1f606fd40377c8bcf581efd39}
+
+\begin{DoxyCompactList}\small\item\em Set the value of the Pursuit component rotation. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_pursuit_component_ac2837285625673fc9df2a5af2c7a4457}{float \hyperlink{classsteer_1_1_pursuit_component_ac2837285625673fc9df2a5af2c7a4457}{get\-Rotation} ()}\label{classsteer_1_1_pursuit_component_ac2837285625673fc9df2a5af2c7a4457}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the Pursuit component rotation. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classsteer_1_1_pursuit_component_a10e4d08aaca8aaf3d7041e281af2a519}{on} (\hyperlink{namespacesteer_afe6e72f8f8088962727051501181acbe}{steer\-::behavior\-Type} behavior)
+\begin{DoxyCompactList}\small\item\em This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_pursuit_component_a02a94c1423b71b2c0dc017a42f9b9dff}{void {\bfseries pursuit\-On} ()}\label{classsteer_1_1_pursuit_component_a02a94c1423b71b2c0dc017a42f9b9dff}
+
+\item 
+\hypertarget{classsteer_1_1_pursuit_component_ae116f09357ae520ae625b8bdfb465167}{bool {\bfseries is\-Pursuit\-On} ()}\label{classsteer_1_1_pursuit_component_ae116f09357ae520ae625b8bdfb465167}
+
+\item 
+\hypertarget{classsteer_1_1_pursuit_component_a2046b1952c056a46287f7f7982d115e8}{void {\bfseries pursuit\-Off} ()}\label{classsteer_1_1_pursuit_component_a2046b1952c056a46287f7f7982d115e8}
+
+\item 
+\hypertarget{classsteer_1_1_pursuit_component_a6c1246c5310b182fcb033940dbb2c9ff}{void {\bfseries set\-Target\-Agent} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$a)}\label{classsteer_1_1_pursuit_component_a6c1246c5310b182fcb033940dbb2c9ff}
+
+\item 
+\hypertarget{classsteer_1_1_pursuit_component_af9a95fbf5c379e32fdcff933d32def99}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Target\-Agent} () const }\label{classsteer_1_1_pursuit_component_af9a95fbf5c379e32fdcff933d32def99}
+
+\item 
+\hypertarget{classsteer_1_1_pursuit_component_ab0d9dca749f1a2474264b01badfd5fa2}{bool {\bfseries target\-Acquired} ()}\label{classsteer_1_1_pursuit_component_ab0d9dca749f1a2474264b01badfd5fa2}
+
+\item 
+\hypertarget{classsteer_1_1_pursuit_component_a644fa669d584d925b4c888bf67119045}{virtual \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_pursuit_component_a644fa669d584d925b4c888bf67119045}{Calculate} ()}\label{classsteer_1_1_pursuit_component_a644fa669d584d925b4c888bf67119045}
+
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating the steering vector. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_pursuit_component_affa6ee80c32666ae2aca6e2536ccf261}{void {\bfseries Update} (float dt)}\label{classsteer_1_1_pursuit_component_affa6ee80c32666ae2aca6e2536ccf261}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An example implementation of the pursuit steering behavior. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsteer_1_1_pursuit_component_a10e4d08aaca8aaf3d7041e281af2a519}{\index{steer\-::\-Pursuit\-Component@{steer\-::\-Pursuit\-Component}!on@{on}}
+\index{on@{on}!steer::PursuitComponent@{steer\-::\-Pursuit\-Component}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool steer\-::\-Pursuit\-Component\-::on (
+\begin{DoxyParamCaption}
+\item[{{\bf steer\-::behavior\-Type}}]{behavior}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classsteer_1_1_pursuit_component_a10e4d08aaca8aaf3d7041e281af2a519}
+
+
+This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & -\/ enum behavior\-Type. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classsteer_1_1_agent_a707204e49e6519c7a8ea0f3ded608d98}{steer\-::\-Agent}.
+
+\hypertarget{classsteer_1_1_pursuit_component_a23cb54c3718028ec7859f4350fe6dda1}{\index{steer\-::\-Pursuit\-Component@{steer\-::\-Pursuit\-Component}!set\-Weight@{set\-Weight}}
+\index{set\-Weight@{set\-Weight}!steer::PursuitComponent@{steer\-::\-Pursuit\-Component}}
+\subsubsection[{set\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}void steer\-::\-Pursuit\-Component\-::set\-Weight (
+\begin{DoxyParamCaption}
+\item[{const float}]{weight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsteer_1_1_pursuit_component_a23cb54c3718028ec7859f4350fe6dda1}
+
+
+Set the value of the weight multiplier for the Pursuit component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & -\/ a plain old float. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/components/Pursuit\-Component.\-hpp\item 
+src/steeriously/components/Pursuit\-Component.\-cpp\end{DoxyCompactItemize}

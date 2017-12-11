@@ -1,0 +1,317 @@
+\hypertarget{classsteer_1_1_vector_math}{\section{steer\-:\-:Vector\-Math Class Reference}
+\label{classsteer_1_1_vector_math}\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}}
+}
+
+
+Stateless \hyperlink{classsteer_1_1_vector_math}{Vector\-Math} class utilizing static methods to manipulate vectors. \par
+Copies of \hyperlink{structsteer_1_1_vector2}{Vector2} are cheap, therefore all functions are \char`\"{}pass by value\char`\"{} at this time.  
+
+
+
+
+{\ttfamily \#include $<$Vector\-Math.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_vector_math_afa46a599077253d47819d92e0be8d383}{\hyperlink{classsteer_1_1_vector_math_afa46a599077253d47819d92e0be8d383}{Vector\-Math} ()}\label{classsteer_1_1_vector_math_afa46a599077253d47819d92e0be8d383}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_vector_math_a311193142786d1f4904dd6de3146b474}{\hyperlink{classsteer_1_1_vector_math_a311193142786d1f4904dd6de3146b474}{$\sim$\-Vector\-Math} ()}\label{classsteer_1_1_vector_math_a311193142786d1f4904dd6de3146b474}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_a6a637fee6dd4c1fb239d78012e3e5a62}{component\-Product} (\hyperlink{structsteer_1_1_vector2}{Vector2} a, \hyperlink{structsteer_1_1_vector2}{Vector2} b)
+\begin{DoxyCompactList}\small\item\em A static method returning a vector that is the component product of two vectors. \end{DoxyCompactList}\item 
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_ae2a61b5919c0b3e29d98add18340c5e3}{truncate} (\hyperlink{structsteer_1_1_vector2}{Vector2} v, float max)
+\begin{DoxyCompactList}\small\item\em A static method returning a truncated vector based on some maximum value. \end{DoxyCompactList}\item 
+static float \hyperlink{classsteer_1_1_vector_math_ae9646371fd7dd38c33ee2f88ac114234}{dot\-Product} (\hyperlink{structsteer_1_1_vector2}{Vector2} a, \hyperlink{structsteer_1_1_vector2}{Vector2} b)
+\begin{DoxyCompactList}\small\item\em A static method returning the dot product of two vectors. \end{DoxyCompactList}\item 
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_aa2820b8424b7d01bcbaf877d05108fd2}{perpendicular} (\hyperlink{structsteer_1_1_vector2}{Vector2} a)
+\begin{DoxyCompactList}\small\item\em A static method returning a vector that is perpendicular to the vector supplied. \end{DoxyCompactList}\item 
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_af1e8a61f7eb8fb2ba8fb7fe2fa5d59e9}{direction} (\hyperlink{structsteer_1_1_vector2}{Vector2} a, \hyperlink{structsteer_1_1_vector2}{Vector2} b)
+\begin{DoxyCompactList}\small\item\em A static method returning the directional vector that vector a needs to be transformed to in order to point towards vector b. \end{DoxyCompactList}\item 
+static float \hyperlink{classsteer_1_1_vector_math_a386d5cc8c572422ac7a2f63925883a06}{distance} (\hyperlink{structsteer_1_1_vector2}{Vector2} a, \hyperlink{structsteer_1_1_vector2}{Vector2} b)
+\begin{DoxyCompactList}\small\item\em A static method returning the distance between two given vectors, a and b. \end{DoxyCompactList}\item 
+static float \hyperlink{classsteer_1_1_vector_math_ab7c1336121423d029113b0314b48dc15}{distance\-Squared} (\hyperlink{structsteer_1_1_vector2}{Vector2} a, \hyperlink{structsteer_1_1_vector2}{Vector2} b)
+\begin{DoxyCompactList}\small\item\em A static method returning the distance squared between two given vectors, a and b -\/ avoids the overhead of sqrt when necessary. \end{DoxyCompactList}\item 
+static float \hyperlink{classsteer_1_1_vector_math_acd9482d3b672a34ddf90e20e94373bd5}{find\-Angle} (\hyperlink{structsteer_1_1_vector2}{Vector2} v)
+\begin{DoxyCompactList}\small\item\em A static method returning the angle resolved from a vector (pass in vector1 -\/ vector2 or a precomputed vector) -\/ useful for finding the angle of a target, for example.\par
+Internally, this function converts from radians to degrees so you don't have to. \end{DoxyCompactList}\item 
+static float \hyperlink{classsteer_1_1_vector_math_a71fff49a5e48b59400a331283aa89adc}{length} (\hyperlink{structsteer_1_1_vector2}{Vector2} v)
+\begin{DoxyCompactList}\small\item\em A static method returning the length (or magnitude) of a vector. \end{DoxyCompactList}\item 
+static float \hyperlink{classsteer_1_1_vector_math_a70ef679a6a5e8ffeeaf8e37aa6510f65}{length\-Squared} (\hyperlink{structsteer_1_1_vector2}{Vector2} v)
+\begin{DoxyCompactList}\small\item\em A static method returning the squared length of a vector. \end{DoxyCompactList}\item 
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_aae0d6aa81adba0a66ad40a43f71db6a3}{normalize} (\hyperlink{structsteer_1_1_vector2}{Vector2} v)
+\begin{DoxyCompactList}\small\item\em A static method returning a normalized (or unit) vector. \end{DoxyCompactList}\item 
+static bool \hyperlink{classsteer_1_1_vector_math_a2ba23731de0598131b003f9409d3d433}{line\-Intersects\-Circle} (\hyperlink{structsteer_1_1_vector2}{Vector2} ahead, \hyperlink{structsteer_1_1_vector2}{Vector2} ahead2, \hyperlink{classsteer_1_1_sphere_obstacle}{Sphere\-Obstacle} obstacle, \hyperlink{structsteer_1_1_vector2}{Vector2} agent\-Position)
+\begin{DoxyCompactList}\small\item\em A static method returning a boolean to test whether a vector intersects a circle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stateless \hyperlink{classsteer_1_1_vector_math}{Vector\-Math} class utilizing static methods to manipulate vectors. \par
+Copies of \hyperlink{structsteer_1_1_vector2}{Vector2} are cheap, therefore all functions are \char`\"{}pass by value\char`\"{} at this time. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsteer_1_1_vector_math_a6a637fee6dd4c1fb239d78012e3e5a62}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!component\-Product@{component\-Product}}
+\index{component\-Product@{component\-Product}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{component\-Product}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} steer\-::\-Vector\-Math\-::component\-Product (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{a, }
+\item[{{\bf Vector2}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_a6a637fee6dd4c1fb239d78012e3e5a62}
+
+
+A static method returning a vector that is the component product of two vectors. 
+
+\begin{DoxySeeAlso}{See Also}
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_a6a637fee6dd4c1fb239d78012e3e5a62}{component\-Product(\-Vector2 a, Vector2 b)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ a vector of doubles. \\
+\hline
+{\em b} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_af1e8a61f7eb8fb2ba8fb7fe2fa5d59e9}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!direction@{direction}}
+\index{direction@{direction}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} steer\-::\-Vector\-Math\-::direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{a, }
+\item[{{\bf Vector2}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_af1e8a61f7eb8fb2ba8fb7fe2fa5d59e9}
+
+
+A static method returning the directional vector that vector a needs to be transformed to in order to point towards vector b. 
+
+\begin{DoxySeeAlso}{See Also}
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_af1e8a61f7eb8fb2ba8fb7fe2fa5d59e9}{direction(\-Vector2 a, Vector2 b)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ a vector of doubles. \\
+\hline
+{\em b} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_a386d5cc8c572422ac7a2f63925883a06}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!distance@{distance}}
+\index{distance@{distance}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}float steer\-::\-Vector\-Math\-::distance (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{a, }
+\item[{{\bf Vector2}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_a386d5cc8c572422ac7a2f63925883a06}
+
+
+A static method returning the distance between two given vectors, a and b. 
+
+\begin{DoxySeeAlso}{See Also}
+static float \hyperlink{classsteer_1_1_vector_math_a386d5cc8c572422ac7a2f63925883a06}{distance(\-Vector2 a, Vector2 b)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ a vector of doubles. \\
+\hline
+{\em b} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_ab7c1336121423d029113b0314b48dc15}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!distance\-Squared@{distance\-Squared}}
+\index{distance\-Squared@{distance\-Squared}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{distance\-Squared}]{\setlength{\rightskip}{0pt plus 5cm}float steer\-::\-Vector\-Math\-::distance\-Squared (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{a, }
+\item[{{\bf Vector2}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_ab7c1336121423d029113b0314b48dc15}
+
+
+A static method returning the distance squared between two given vectors, a and b -\/ avoids the overhead of sqrt when necessary. 
+
+\begin{DoxySeeAlso}{See Also}
+static float \hyperlink{classsteer_1_1_vector_math_ab7c1336121423d029113b0314b48dc15}{distance\-Squared(\-Vector2 a, Vector2 b)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ a vector of doubles. \\
+\hline
+{\em b} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_ae9646371fd7dd38c33ee2f88ac114234}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!dot\-Product@{dot\-Product}}
+\index{dot\-Product@{dot\-Product}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{dot\-Product}]{\setlength{\rightskip}{0pt plus 5cm}float steer\-::\-Vector\-Math\-::dot\-Product (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{a, }
+\item[{{\bf Vector2}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_ae9646371fd7dd38c33ee2f88ac114234}
+
+
+A static method returning the dot product of two vectors. 
+
+\begin{DoxySeeAlso}{See Also}
+static float \hyperlink{classsteer_1_1_vector_math_ae9646371fd7dd38c33ee2f88ac114234}{dot\-Product(\-Vector2 a, Vector2 b)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ a vector of doubles. \\
+\hline
+{\em b} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_acd9482d3b672a34ddf90e20e94373bd5}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!find\-Angle@{find\-Angle}}
+\index{find\-Angle@{find\-Angle}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{find\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}float steer\-::\-Vector\-Math\-::find\-Angle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_acd9482d3b672a34ddf90e20e94373bd5}
+
+
+A static method returning the angle resolved from a vector (pass in vector1 -\/ vector2 or a precomputed vector) -\/ useful for finding the angle of a target, for example.\par
+Internally, this function converts from radians to degrees so you don't have to. 
+
+\begin{DoxySeeAlso}{See Also}
+static float \hyperlink{classsteer_1_1_vector_math_acd9482d3b672a34ddf90e20e94373bd5}{find\-Angle(\-Vector2 v)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_a71fff49a5e48b59400a331283aa89adc}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!length@{length}}
+\index{length@{length}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}float steer\-::\-Vector\-Math\-::length (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_a71fff49a5e48b59400a331283aa89adc}
+
+
+A static method returning the length (or magnitude) of a vector. 
+
+\begin{DoxySeeAlso}{See Also}
+static float \hyperlink{classsteer_1_1_vector_math_a71fff49a5e48b59400a331283aa89adc}{length(\-Vector2 v)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_a70ef679a6a5e8ffeeaf8e37aa6510f65}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!length\-Squared@{length\-Squared}}
+\index{length\-Squared@{length\-Squared}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{length\-Squared}]{\setlength{\rightskip}{0pt plus 5cm}float steer\-::\-Vector\-Math\-::length\-Squared (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_a70ef679a6a5e8ffeeaf8e37aa6510f65}
+
+
+A static method returning the squared length of a vector. 
+
+\begin{DoxySeeAlso}{See Also}
+static float \hyperlink{classsteer_1_1_vector_math_a70ef679a6a5e8ffeeaf8e37aa6510f65}{length\-Squared(\-Vector2 v)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_a2ba23731de0598131b003f9409d3d433}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!line\-Intersects\-Circle@{line\-Intersects\-Circle}}
+\index{line\-Intersects\-Circle@{line\-Intersects\-Circle}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{line\-Intersects\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}bool steer\-::\-Vector\-Math\-::line\-Intersects\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{ahead, }
+\item[{{\bf Vector2}}]{ahead2, }
+\item[{{\bf steer\-::\-Sphere\-Obstacle}}]{obstacle, }
+\item[{{\bf Vector2}}]{agent\-Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_a2ba23731de0598131b003f9409d3d433}
+
+
+A static method returning a boolean to test whether a vector intersects a circle. 
+
+\begin{DoxySeeAlso}{See Also}
+static \hyperlink{structsteer_1_1_vector2}{Vector2} line\-Intersects\-Circle(\-Vector2 ahead, Vector2 ahead2, Sphere\-Obstacle obstacle) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em ahead} & -\/ a vector of doubles. \\
+\hline
+{\em ahead2} & -\/ a vector of doubles. \\
+\hline
+{\em obstacle} & -\/ an \hyperlink{classsteer_1_1_sphere_obstacle}{steer\-::\-Sphere\-Obstacle}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_aae0d6aa81adba0a66ad40a43f71db6a3}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!normalize@{normalize}}
+\index{normalize@{normalize}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} steer\-::\-Vector\-Math\-::normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_aae0d6aa81adba0a66ad40a43f71db6a3}
+
+
+A static method returning a normalized (or unit) vector. 
+
+\begin{DoxySeeAlso}{See Also}
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_aae0d6aa81adba0a66ad40a43f71db6a3}{normalize(\-Vector2 v)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_aa2820b8424b7d01bcbaf877d05108fd2}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!perpendicular@{perpendicular}}
+\index{perpendicular@{perpendicular}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{perpendicular}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} steer\-::\-Vector\-Math\-::perpendicular (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_aa2820b8424b7d01bcbaf877d05108fd2}
+
+
+A static method returning a vector that is perpendicular to the vector supplied. 
+
+\begin{DoxySeeAlso}{See Also}
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_aa2820b8424b7d01bcbaf877d05108fd2}{perpendicular(\-Vector2 a)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ a vector of doubles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_vector_math_ae2a61b5919c0b3e29d98add18340c5e3}{\index{steer\-::\-Vector\-Math@{steer\-::\-Vector\-Math}!truncate@{truncate}}
+\index{truncate@{truncate}!steer::VectorMath@{steer\-::\-Vector\-Math}}
+\subsubsection[{truncate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} steer\-::\-Vector\-Math\-::truncate (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{v, }
+\item[{float}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsteer_1_1_vector_math_ae2a61b5919c0b3e29d98add18340c5e3}
+
+
+A static method returning a truncated vector based on some maximum value. 
+
+\begin{DoxySeeAlso}{See Also}
+static \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_vector_math_ae2a61b5919c0b3e29d98add18340c5e3}{truncate(\-Vector2 v, float max)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ a vector of doubles. \\
+\hline
+{\em max} & -\/ a plain old float. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/Vector\-Math.\-hpp\item 
+src/steeriously/Vector\-Math.\-cpp\end{DoxyCompactItemize}

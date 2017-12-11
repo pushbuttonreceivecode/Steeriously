@@ -1,0 +1,177 @@
+\hypertarget{classsteer_1_1_path}{\section{steer\-:\-:Path Class Reference}
+\label{classsteer_1_1_path}\index{steer\-::\-Path@{steer\-::\-Path}}
+}
+
+
+Class providing the necessary structure for path following behavior.  
+
+
+
+
+{\ttfamily \#include $<$Path.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_path_a9ea093f9196ead3d5724509d7fc4d3e5}{\hyperlink{classsteer_1_1_path_a9ea093f9196ead3d5724509d7fc4d3e5}{Path} ()}\label{classsteer_1_1_path_a9ea093f9196ead3d5724509d7fc4d3e5}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsteer_1_1_path_a36c4ed5fc8d2d3e4747920c0bedfbb97}{Path} (int Num\-Waypoints, std\-::list$<$ \hyperlink{structsteer_1_1_vector2}{steer\-::\-Vector2} $>$ \&waypoints)
+\begin{DoxyCompactList}\small\item\em Constructor used for creating a path from a list of waypoints. \end{DoxyCompactList}\item 
+\hyperlink{classsteer_1_1_path_a4c0811fa900426c5ee36d00c33af7ed5}{Path} (int Num\-Waypoints, float Min\-X, float Min\-Y, float Max\-X, float Max\-Y, bool looped)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a path with initial random waypoints. Min\-X/\-Y \& Max\-X/\-Y define the bounding box of the path. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_aaae6cb3aed1cd324e36ad61fd88221db}{\hyperlink{classsteer_1_1_path_aaae6cb3aed1cd324e36ad61fd88221db}{$\sim$\-Path} ()}\label{classsteer_1_1_path_aaae6cb3aed1cd324e36ad61fd88221db}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_a29340827e82b14da98cc6e10e67bffa6}{\hyperlink{structsteer_1_1_vector2}{steer\-::\-Vector2} \hyperlink{classsteer_1_1_path_a29340827e82b14da98cc6e10e67bffa6}{current\-Waypoint} () const }\label{classsteer_1_1_path_a29340827e82b14da98cc6e10e67bffa6}
+
+\begin{DoxyCompactList}\small\item\em Returns the current waypoint. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_af3bf9a7135709983607bccbc1c501c0d}{bool \hyperlink{classsteer_1_1_path_af3bf9a7135709983607bccbc1c501c0d}{finished} ()}\label{classsteer_1_1_path_af3bf9a7135709983607bccbc1c501c0d}
+
+\begin{DoxyCompactList}\small\item\em Returns true if the end of the list has been reached. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_a54802e44fde08a217ac9b9ea1321b911}{void \hyperlink{classsteer_1_1_path_a54802e44fde08a217ac9b9ea1321b911}{set\-Next\-Waypoint} ()}\label{classsteer_1_1_path_a54802e44fde08a217ac9b9ea1321b911}
+
+\begin{DoxyCompactList}\small\item\em Moves the iterator on to the next waypoint in the list. \end{DoxyCompactList}\item 
+std\-::list$<$ \hyperlink{structsteer_1_1_vector2}{steer\-::\-Vector2} $>$ \hyperlink{classsteer_1_1_path_a6d1d4e9870f39dbec71dcda56044e0e7}{create\-Random\-Path} (int Num\-Waypoints, float Min\-X, float Min\-Y, float Max\-X, float Max\-Y)
+\begin{DoxyCompactList}\small\item\em Creates a random path which is bound by rectangle described by the min/max values. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_a60efd7a0cc089e1dad6483dd3e378355}{void \hyperlink{classsteer_1_1_path_a60efd7a0cc089e1dad6483dd3e378355}{loop\-On} ()}\label{classsteer_1_1_path_a60efd7a0cc089e1dad6483dd3e378355}
+
+\begin{DoxyCompactList}\small\item\em Turn on the loop option for the path so the path meets the first waypoint. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_a0f872c277f30488a9eed65acf3934093}{void \hyperlink{classsteer_1_1_path_a0f872c277f30488a9eed65acf3934093}{loop\-Off} ()}\label{classsteer_1_1_path_a0f872c277f30488a9eed65acf3934093}
+
+\begin{DoxyCompactList}\small\item\em Turn off the loop option for the path so the path ends on the last waypoint. \end{DoxyCompactList}\item 
+void \hyperlink{classsteer_1_1_path_abd66161db6441fad51d5cda43f7c0b13}{set} (std\-::list$<$ \hyperlink{structsteer_1_1_vector2}{steer\-::\-Vector2} $>$ new\-Path)
+\begin{DoxyCompactList}\small\item\em Method for setting the path with list of vectors. \end{DoxyCompactList}\item 
+void \hyperlink{classsteer_1_1_path_a9bf49c27d91fe8316a866d4483574a13}{set} (const \hyperlink{classsteer_1_1_path}{Path} \&path)
+\begin{DoxyCompactList}\small\item\em Method for setting the path with a previously defined \hyperlink{classsteer_1_1_path}{Path}. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_a76d63db05197b28767e5fa13befb7dbe}{void \hyperlink{classsteer_1_1_path_a76d63db05197b28767e5fa13befb7dbe}{clear} ()}\label{classsteer_1_1_path_a76d63db05197b28767e5fa13befb7dbe}
+
+\begin{DoxyCompactList}\small\item\em Clears all waypoints in the path std\-::vector. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_path_aedf4d447eb5286a3ff16562ee34c5bcd}{std\-::list$<$ \hyperlink{structsteer_1_1_vector2}{steer\-::\-Vector2} $>$ \hyperlink{classsteer_1_1_path_aedf4d447eb5286a3ff16562ee34c5bcd}{get\-Path} () const }\label{classsteer_1_1_path_aedf4d447eb5286a3ff16562ee34c5bcd}
+
+\begin{DoxyCompactList}\small\item\em Returns the std\-::vector of waypoints in the path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class providing the necessary structure for path following behavior. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsteer_1_1_path_a36c4ed5fc8d2d3e4747920c0bedfbb97}{\index{steer\-::\-Path@{steer\-::\-Path}!Path@{Path}}
+\index{Path@{Path}!steer::Path@{steer\-::\-Path}}
+\subsubsection[{Path}]{\setlength{\rightskip}{0pt plus 5cm}steer\-::\-Path\-::\-Path (
+\begin{DoxyParamCaption}
+\item[{int}]{Num\-Waypoints, }
+\item[{std\-::list$<$ {\bf steer\-::\-Vector2} $>$ \&}]{waypoints}
+\end{DoxyParamCaption}
+)}}\label{classsteer_1_1_path_a36c4ed5fc8d2d3e4747920c0bedfbb97}
+
+
+Constructor used for creating a path from a list of waypoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Num\-Waypoints} & -\/ a plain old int. \\
+\hline
+{\em waypoints} & -\/ a std\-::list of \hyperlink{structsteer_1_1_vector2}{steer\-::\-Vector2}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_path_a4c0811fa900426c5ee36d00c33af7ed5}{\index{steer\-::\-Path@{steer\-::\-Path}!Path@{Path}}
+\index{Path@{Path}!steer::Path@{steer\-::\-Path}}
+\subsubsection[{Path}]{\setlength{\rightskip}{0pt plus 5cm}steer\-::\-Path\-::\-Path (
+\begin{DoxyParamCaption}
+\item[{int}]{Num\-Waypoints, }
+\item[{float}]{Min\-X, }
+\item[{float}]{Min\-Y, }
+\item[{float}]{Max\-X, }
+\item[{float}]{Max\-Y, }
+\item[{bool}]{looped}
+\end{DoxyParamCaption}
+)}}\label{classsteer_1_1_path_a4c0811fa900426c5ee36d00c33af7ed5}
+
+
+Constructor for creating a path with initial random waypoints. Min\-X/\-Y \& Max\-X/\-Y define the bounding box of the path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Num\-Waypoints} & -\/ a plain old int. \\
+\hline
+{\em Min\-X} & -\/ a plain old float. \\
+\hline
+{\em Min\-Y} & -\/ a plain old float. \\
+\hline
+{\em Max\-X} & -\/ a plain old float. \\
+\hline
+{\em Max\-Y} & -\/ a plain old float. \\
+\hline
+{\em looped} & -\/ a plain old bool. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsteer_1_1_path_a6d1d4e9870f39dbec71dcda56044e0e7}{\index{steer\-::\-Path@{steer\-::\-Path}!create\-Random\-Path@{create\-Random\-Path}}
+\index{create\-Random\-Path@{create\-Random\-Path}!steer::Path@{steer\-::\-Path}}
+\subsubsection[{create\-Random\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Vector2} $>$ steer\-::\-Path\-::create\-Random\-Path (
+\begin{DoxyParamCaption}
+\item[{int}]{Num\-Waypoints, }
+\item[{float}]{Min\-X, }
+\item[{float}]{Min\-Y, }
+\item[{float}]{Max\-X, }
+\item[{float}]{Max\-Y}
+\end{DoxyParamCaption}
+)}}\label{classsteer_1_1_path_a6d1d4e9870f39dbec71dcda56044e0e7}
+
+
+Creates a random path which is bound by rectangle described by the min/max values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Num\-Waypoints} & -\/ a plain old int. \\
+\hline
+{\em Min\-X} & -\/ a plain old float. \\
+\hline
+{\em Min\-Y} & -\/ a plain old float. \\
+\hline
+{\em Max\-X} & -\/ a plain old float. \\
+\hline
+{\em Max\-Y} & -\/ a plain old float. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_path_abd66161db6441fad51d5cda43f7c0b13}{\index{steer\-::\-Path@{steer\-::\-Path}!set@{set}}
+\index{set@{set}!steer::Path@{steer\-::\-Path}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void steer\-::\-Path\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf steer\-::\-Vector2} $>$}]{new\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsteer_1_1_path_abd66161db6441fad51d5cda43f7c0b13}
+
+
+Method for setting the path with list of vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Path} & -\/ a std\-::vector of \hyperlink{structsteer_1_1_vector2}{steer\-::\-Vector2} floats. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsteer_1_1_path_a9bf49c27d91fe8316a866d4483574a13}{\index{steer\-::\-Path@{steer\-::\-Path}!set@{set}}
+\index{set@{set}!steer::Path@{steer\-::\-Path}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}steer\-::\-Path\-::set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path} \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsteer_1_1_path_a9bf49c27d91fe8316a866d4483574a13}
+
+
+Method for setting the path with a previously defined \hyperlink{classsteer_1_1_path}{Path}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ a \hyperlink{classsteer_1_1_path}{steer\-::\-Path} object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/Path.\-hpp\item 
+src/steeriously/Path.\-cpp\end{DoxyCompactItemize}

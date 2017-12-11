@@ -1,0 +1,170 @@
+\hypertarget{classsteer_1_1_flocking_component}{\section{steer\-:\-:Flocking\-Component Class Reference}
+\label{classsteer_1_1_flocking_component}\index{steer\-::\-Flocking\-Component@{steer\-::\-Flocking\-Component}}
+}
+
+
+An example implementation of the flocking steering behavior. The agent will interact with other members of the flock utilizing alignment, separation, cohesion, and wandering behaviors.  
+
+
+
+
+{\ttfamily \#include $<$Flocking\-Component.\-hpp$>$}
+
+Inheritance diagram for steer\-:\-:Flocking\-Component\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsteer_1_1_flocking_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a88df12e71eb24d0d8e43532f49ab38d0}{{\bfseries Flocking\-Component} (\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$params)}\label{classsteer_1_1_flocking_component_a88df12e71eb24d0d8e43532f49ab38d0}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ad48b93c8e56858a90febd09b0c3f67eb}{void {\bfseries set\-Params} (\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$params)}\label{classsteer_1_1_flocking_component_ad48b93c8e56858a90febd09b0c3f67eb}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a07be5adc3a5c2462d5b0ab5a9fa02638}{\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$ {\bfseries get\-Params} ()}\label{classsteer_1_1_flocking_component_a07be5adc3a5c2462d5b0ab5a9fa02638}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a9f6b56e3dbe9278fe7e6dd4594e39d68}{void {\bfseries Update} (float dt)}\label{classsteer_1_1_flocking_component_a9f6b56e3dbe9278fe7e6dd4594e39d68}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ad0ba21cd64f3c44208f221f3d7549062}{float \hyperlink{classsteer_1_1_flocking_component_ad0ba21cd64f3c44208f221f3d7549062}{get\-Rotation} ()}\label{classsteer_1_1_flocking_component_ad0ba21cd64f3c44208f221f3d7549062}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the seek component rotation. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_flocking_component_aa5f923728cfe57c6fd73967e40f548e2}{void {\bfseries set\-Neighbors} (std\-::vector$<$ \hyperlink{classsteer_1_1_flocking_component}{Flocking\-Component} $\ast$ $>$ $\ast$n)}\label{classsteer_1_1_flocking_component_aa5f923728cfe57c6fd73967e40f548e2}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ad019771bbd11d1149d374842e33425e5}{std\-::vector$<$ \hyperlink{classsteer_1_1_flocking_component}{Flocking\-Component} $\ast$ $>$ $\ast$ {\bfseries get\-Neighbors} ()}\label{classsteer_1_1_flocking_component_ad019771bbd11d1149d374842e33425e5}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ab7ad010eb626dec2d0784ddef972cc2a}{void {\bfseries set\-Obstacles} (std\-::vector$<$ \hyperlink{classsteer_1_1_sphere_obstacle}{Sphere\-Obstacle} $\ast$ $>$ $\ast$o)}\label{classsteer_1_1_flocking_component_ab7ad010eb626dec2d0784ddef972cc2a}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a7fbfd70dcb4055fa91df97c5dcfc3821}{std\-::vector$<$ \hyperlink{classsteer_1_1_sphere_obstacle}{Sphere\-Obstacle} $\ast$ $>$ $\ast$ {\bfseries get\-Obstacles} ()}\label{classsteer_1_1_flocking_component_a7fbfd70dcb4055fa91df97c5dcfc3821}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ae778656b1df44de398f81c8ec66f8766}{void {\bfseries set\-Walls} (std\-::vector$<$ \hyperlink{classsteer_1_1_wall}{Wall} $\ast$ $>$ $\ast$w)}\label{classsteer_1_1_flocking_component_ae778656b1df44de398f81c8ec66f8766}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ae6a60ac996d1ada0145e168f541a96ef}{std\-::vector$<$ \hyperlink{classsteer_1_1_wall}{Wall} $\ast$ $>$ $\ast$ {\bfseries get\-Walls} ()}\label{classsteer_1_1_flocking_component_ae6a60ac996d1ada0145e168f541a96ef}
+
+\item 
+virtual bool \hyperlink{classsteer_1_1_flocking_component_a0d788eaec845b83503a7918e984cfd5b}{on} (\hyperlink{namespacesteer_afe6e72f8f8088962727051501181acbe}{steer\-::behavior\-Type} behavior) override
+\begin{DoxyCompactList}\small\item\em This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_flocking_component_a89ac69483994c9e64f3727029f70ec58}{void {\bfseries alignment\-On} ()}\label{classsteer_1_1_flocking_component_a89ac69483994c9e64f3727029f70ec58}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a8adcea80a9614ae5f431cc4188c2b0d7}{void {\bfseries separation\-On} ()}\label{classsteer_1_1_flocking_component_a8adcea80a9614ae5f431cc4188c2b0d7}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a8d57ea0ff29d1bfae5e149e0442af54c}{void {\bfseries cohesion\-On} ()}\label{classsteer_1_1_flocking_component_a8d57ea0ff29d1bfae5e149e0442af54c}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_aad6b6a52e2aeaaae441c4d5e0a47d455}{void {\bfseries seek\-On} ()}\label{classsteer_1_1_flocking_component_aad6b6a52e2aeaaae441c4d5e0a47d455}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a86f5885a8fbc8a7436420bc0f336218f}{void {\bfseries wander\-On} ()}\label{classsteer_1_1_flocking_component_a86f5885a8fbc8a7436420bc0f336218f}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ab9147569164325a5e1d969080dae86b2}{void {\bfseries wall\-Avoidance\-On} ()}\label{classsteer_1_1_flocking_component_ab9147569164325a5e1d969080dae86b2}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a6ff71635135f739469e3f43c1211b0c0}{void {\bfseries obstacle\-Avoidance\-On} ()}\label{classsteer_1_1_flocking_component_a6ff71635135f739469e3f43c1211b0c0}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_adcce1eb15ddddbe03504b6fb04bfa7bd}{void {\bfseries cohesion\-Off} ()}\label{classsteer_1_1_flocking_component_adcce1eb15ddddbe03504b6fb04bfa7bd}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_acc8272a36ff736c256912bf057dcb5cc}{void {\bfseries separation\-Off} ()}\label{classsteer_1_1_flocking_component_acc8272a36ff736c256912bf057dcb5cc}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a5a6972e642a81850ed4e12c32d604be8}{void {\bfseries alignment\-Off} ()}\label{classsteer_1_1_flocking_component_a5a6972e642a81850ed4e12c32d604be8}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a5082b73416b8e8541c1e774a5da4c2cc}{void {\bfseries seek\-Off} ()}\label{classsteer_1_1_flocking_component_a5082b73416b8e8541c1e774a5da4c2cc}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a42b04fd9d54d25a8b40cb222e042d621}{void {\bfseries wander\-Off} ()}\label{classsteer_1_1_flocking_component_a42b04fd9d54d25a8b40cb222e042d621}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a8c91bf47132fb9190e7c525fa23de44a}{void {\bfseries wall\-Avoidance\-Off} ()}\label{classsteer_1_1_flocking_component_a8c91bf47132fb9190e7c525fa23de44a}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a7f29936d46248db446153c87848e95c3}{void {\bfseries obstacle\-Avoidance\-Off} ()}\label{classsteer_1_1_flocking_component_a7f29936d46248db446153c87848e95c3}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a0c7f66f2f62391bd1396974dc322a12b}{bool {\bfseries is\-Cohesion\-On} ()}\label{classsteer_1_1_flocking_component_a0c7f66f2f62391bd1396974dc322a12b}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a0212122a315f595abda98ba2f7e0b589}{bool {\bfseries is\-Separation\-On} ()}\label{classsteer_1_1_flocking_component_a0212122a315f595abda98ba2f7e0b589}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a638dc9399d20ab681b45902915f2d66c}{bool {\bfseries is\-Alignment\-On} ()}\label{classsteer_1_1_flocking_component_a638dc9399d20ab681b45902915f2d66c}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a80d59920d01141fa32a549f77b82df12}{bool {\bfseries is\-Seek\-On} ()}\label{classsteer_1_1_flocking_component_a80d59920d01141fa32a549f77b82df12}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_ae8f077a3c37906045d87268e7a54d80b}{bool {\bfseries is\-Wander\-On} ()}\label{classsteer_1_1_flocking_component_ae8f077a3c37906045d87268e7a54d80b}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a8498c8d98461720bc7dcb1260a379e59}{bool {\bfseries is\-Wall\-Avoidance\-On} ()}\label{classsteer_1_1_flocking_component_a8498c8d98461720bc7dcb1260a379e59}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a2b5218dcec5344286d67760872e875f5}{bool {\bfseries is\-Obstacle\-Avoidance\-On} ()}\label{classsteer_1_1_flocking_component_a2b5218dcec5344286d67760872e875f5}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a052f6b2e7181d69c61595c323d7eaa82}{bool {\bfseries is\-Flocking\-On} ()}\label{classsteer_1_1_flocking_component_a052f6b2e7181d69c61595c323d7eaa82}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a8f4122bf63050bb2beba5928b52ffceb}{void {\bfseries flocking\-On} ()}\label{classsteer_1_1_flocking_component_a8f4122bf63050bb2beba5928b52ffceb}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a88c5ad1cc6be0a0e196a6c9389c1171a}{void {\bfseries flocking\-Off} ()}\label{classsteer_1_1_flocking_component_a88c5ad1cc6be0a0e196a6c9389c1171a}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_a898c7612d4be3123b547be3aa7759839}{bool {\bfseries target\-Acquired} ()}\label{classsteer_1_1_flocking_component_a898c7612d4be3123b547be3aa7759839}
+
+\item 
+\hypertarget{classsteer_1_1_flocking_component_aeb8123ba28d8d4a9df97c4f8b3f9b6c3}{virtual \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_flocking_component_aeb8123ba28d8d4a9df97c4f8b3f9b6c3}{Calculate} () override}\label{classsteer_1_1_flocking_component_aeb8123ba28d8d4a9df97c4f8b3f9b6c3}
+
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating the steering vector. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_flocking_component_ae99047e5022fd6a9f03f77af94a956a9}{virtual \hyperlink{structsteer_1_1_vector2}{Vector2} {\bfseries calculate\-Weighted\-Sum} () override}\label{classsteer_1_1_flocking_component_ae99047e5022fd6a9f03f77af94a956a9}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An example implementation of the flocking steering behavior. The agent will interact with other members of the flock utilizing alignment, separation, cohesion, and wandering behaviors. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsteer_1_1_flocking_component_a0d788eaec845b83503a7918e984cfd5b}{\index{steer\-::\-Flocking\-Component@{steer\-::\-Flocking\-Component}!on@{on}}
+\index{on@{on}!steer::FlockingComponent@{steer\-::\-Flocking\-Component}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool steer\-::\-Flocking\-Component\-::on (
+\begin{DoxyParamCaption}
+\item[{{\bf steer\-::behavior\-Type}}]{behavior}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classsteer_1_1_flocking_component_a0d788eaec845b83503a7918e984cfd5b}
+
+
+This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & -\/ enum behavior\-Type. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classsteer_1_1_agent_a707204e49e6519c7a8ea0f3ded608d98}{steer\-::\-Agent}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/components/Flocking\-Component.\-hpp\item 
+src/steeriously/components/Flocking\-Component.\-cpp\end{DoxyCompactItemize}

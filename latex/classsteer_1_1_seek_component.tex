@@ -1,0 +1,104 @@
+\hypertarget{classsteer_1_1_seek_component}{\section{steer\-:\-:Seek\-Component Class Reference}
+\label{classsteer_1_1_seek_component}\index{steer\-::\-Seek\-Component@{steer\-::\-Seek\-Component}}
+}
+
+
+An example implementation of the seek steering behavior.  
+
+
+
+
+{\ttfamily \#include $<$Seek\-Component.\-hpp$>$}
+
+Inheritance diagram for steer\-:\-:Seek\-Component\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsteer_1_1_seek_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_seek_component_af7664e661c7ac568ca0ee97a84fcdd84}{{\bfseries Seek\-Component} (\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$params)}\label{classsteer_1_1_seek_component_af7664e661c7ac568ca0ee97a84fcdd84}
+
+\item 
+void \hyperlink{classsteer_1_1_seek_component_ab581d425507b79abf04b227528f31f14}{set\-Weight} (const float weight)
+\begin{DoxyCompactList}\small\item\em Set the value of the weight multiplier for the seek component. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_seek_component_a67c969244ed054dfb5a6abab6711b052}{float \hyperlink{classsteer_1_1_seek_component_a67c969244ed054dfb5a6abab6711b052}{get\-Weight} () const }\label{classsteer_1_1_seek_component_a67c969244ed054dfb5a6abab6711b052}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the weight multiplier for the seek component. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_seek_component_a7ecf69c4146448c36d626b89c430eaff}{void \hyperlink{classsteer_1_1_seek_component_a7ecf69c4146448c36d626b89c430eaff}{set\-Rotation} (float r)}\label{classsteer_1_1_seek_component_a7ecf69c4146448c36d626b89c430eaff}
+
+\begin{DoxyCompactList}\small\item\em Set the value of the seek component rotation. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_seek_component_a391b89cc1e8d54061f81dca5ab852c89}{float \hyperlink{classsteer_1_1_seek_component_a391b89cc1e8d54061f81dca5ab852c89}{get\-Rotation} ()}\label{classsteer_1_1_seek_component_a391b89cc1e8d54061f81dca5ab852c89}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the seek component rotation. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classsteer_1_1_seek_component_a02782af7638a7dfc59de647ba810d0ae}{on} (\hyperlink{namespacesteer_afe6e72f8f8088962727051501181acbe}{steer\-::behavior\-Type} behavior)
+\begin{DoxyCompactList}\small\item\em This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_seek_component_a93ff3518a3f6889ff98a8eb986098b8d}{void {\bfseries seek\-On} ()}\label{classsteer_1_1_seek_component_a93ff3518a3f6889ff98a8eb986098b8d}
+
+\item 
+\hypertarget{classsteer_1_1_seek_component_ad219116f6dd2b4edbedb613e510c85a7}{bool {\bfseries is\-Seek\-On} ()}\label{classsteer_1_1_seek_component_ad219116f6dd2b4edbedb613e510c85a7}
+
+\item 
+\hypertarget{classsteer_1_1_seek_component_a3d8d434aad5cc50f447a014a11bd74f3}{void {\bfseries seek\-Off} ()}\label{classsteer_1_1_seek_component_a3d8d434aad5cc50f447a014a11bd74f3}
+
+\item 
+\hypertarget{classsteer_1_1_seek_component_ac8c43fcaec1220eb23123563787411c0}{bool {\bfseries target\-Acquired} ()}\label{classsteer_1_1_seek_component_ac8c43fcaec1220eb23123563787411c0}
+
+\item 
+\hypertarget{classsteer_1_1_seek_component_afdf0d958f5b51deb07ec1e6c9c30fb6b}{virtual \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_seek_component_afdf0d958f5b51deb07ec1e6c9c30fb6b}{Calculate} ()}\label{classsteer_1_1_seek_component_afdf0d958f5b51deb07ec1e6c9c30fb6b}
+
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating the steering vector. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_seek_component_a1121c7588fd4071fbf08bbe4164d3a23}{void {\bfseries Update} (float dt)}\label{classsteer_1_1_seek_component_a1121c7588fd4071fbf08bbe4164d3a23}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An example implementation of the seek steering behavior. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsteer_1_1_seek_component_a02782af7638a7dfc59de647ba810d0ae}{\index{steer\-::\-Seek\-Component@{steer\-::\-Seek\-Component}!on@{on}}
+\index{on@{on}!steer::SeekComponent@{steer\-::\-Seek\-Component}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool steer\-::\-Seek\-Component\-::on (
+\begin{DoxyParamCaption}
+\item[{{\bf steer\-::behavior\-Type}}]{behavior}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classsteer_1_1_seek_component_a02782af7638a7dfc59de647ba810d0ae}
+
+
+This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & -\/ enum behavior\-Type. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classsteer_1_1_agent_a707204e49e6519c7a8ea0f3ded608d98}{steer\-::\-Agent}.
+
+\hypertarget{classsteer_1_1_seek_component_ab581d425507b79abf04b227528f31f14}{\index{steer\-::\-Seek\-Component@{steer\-::\-Seek\-Component}!set\-Weight@{set\-Weight}}
+\index{set\-Weight@{set\-Weight}!steer::SeekComponent@{steer\-::\-Seek\-Component}}
+\subsubsection[{set\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}void steer\-::\-Seek\-Component\-::set\-Weight (
+\begin{DoxyParamCaption}
+\item[{const float}]{weight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsteer_1_1_seek_component_ab581d425507b79abf04b227528f31f14}
+
+
+Set the value of the weight multiplier for the seek component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & -\/ a plain old float. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/components/Seek\-Component.\-hpp\item 
+src/steeriously/components/Seek\-Component.\-cpp\end{DoxyCompactItemize}

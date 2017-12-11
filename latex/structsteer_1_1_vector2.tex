@@ -1,0 +1,95 @@
+\hypertarget{structsteer_1_1_vector2}{\section{steer\-:\-:Vector2 Struct Reference}
+\label{structsteer_1_1_vector2}\index{steer\-::\-Vector2@{steer\-::\-Vector2}}
+}
+
+
+A 2\-D vector struct used in many steering calculations.  
+
+
+
+
+{\ttfamily \#include $<$Vector2.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structsteer_1_1_vector2_a6a933cf0f06bfd06c87504afadb2fb1f}{\hyperlink{structsteer_1_1_vector2_a6a933cf0f06bfd06c87504afadb2fb1f}{Vector2} ()}\label{structsteer_1_1_vector2_a6a933cf0f06bfd06c87504afadb2fb1f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_a9a52d06e412d058cd153d39ce2f4f8e6}{{\bfseries Vector2} (double a, double b)}\label{structsteer_1_1_vector2_a9a52d06e412d058cd153d39ce2f4f8e6}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_acfdeb77fde9e5ff5b4d4382cedae7c37}{void \hyperlink{structsteer_1_1_vector2_acfdeb77fde9e5ff5b4d4382cedae7c37}{Zero} ()}\label{structsteer_1_1_vector2_acfdeb77fde9e5ff5b4d4382cedae7c37}
+
+\begin{DoxyCompactList}\small\item\em Set both x and y values to zero. \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_ac566f4b8db067347553e267e52124360}{bool \hyperlink{structsteer_1_1_vector2_ac566f4b8db067347553e267e52124360}{is\-Zero} () const }\label{structsteer_1_1_vector2_ac566f4b8db067347553e267e52124360}
+
+\begin{DoxyCompactList}\small\item\em Returns true if both x and y values are zero. \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_abd9e9306146a4ac7b26bb3b10a438d73}{double \hyperlink{structsteer_1_1_vector2_abd9e9306146a4ac7b26bb3b10a438d73}{Length} () const }\label{structsteer_1_1_vector2_abd9e9306146a4ac7b26bb3b10a438d73}
+
+\begin{DoxyCompactList}\small\item\em Returns the length of the vector. \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_af8eb7d1603dcf6e474ee65877649db47}{double \hyperlink{structsteer_1_1_vector2_af8eb7d1603dcf6e474ee65877649db47}{Length\-Sq} () const }\label{structsteer_1_1_vector2_af8eb7d1603dcf6e474ee65877649db47}
+
+\begin{DoxyCompactList}\small\item\em Returns the squared length of the vector (thereby avoiding sqrt). \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_a7a18e52012cf852487e3923c5e902739}{void \hyperlink{structsteer_1_1_vector2_a7a18e52012cf852487e3923c5e902739}{Normalize} ()}\label{structsteer_1_1_vector2_a7a18e52012cf852487e3923c5e902739}
+
+\begin{DoxyCompactList}\small\item\em Normalizes the vector. \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_ac2fa511713c43bd4d8a5d7d431acfbb4}{double \hyperlink{structsteer_1_1_vector2_ac2fa511713c43bd4d8a5d7d431acfbb4}{Dot} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&v2) const }\label{structsteer_1_1_vector2_ac2fa511713c43bd4d8a5d7d431acfbb4}
+
+\begin{DoxyCompactList}\small\item\em Returns the dot product of the vector. \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_a930a20a650638870219deee45b01f94f}{int \hyperlink{structsteer_1_1_vector2_a930a20a650638870219deee45b01f94f}{Sign} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&v2) const }\label{structsteer_1_1_vector2_a930a20a650638870219deee45b01f94f}
+
+\begin{DoxyCompactList}\small\item\em Returns positive if v2 is clockwise of this vector, negative if anticlockwise (assuming y-\/axis is pointing down and x-\/axis is pointing right). \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_ad2319dbb015ad83c94ed876a5deaf4f2}{\hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{structsteer_1_1_vector2_ad2319dbb015ad83c94ed876a5deaf4f2}{Perp} () const }\label{structsteer_1_1_vector2_ad2319dbb015ad83c94ed876a5deaf4f2}
+
+\begin{DoxyCompactList}\small\item\em Returns the vector that is perpendicular to this vector. \end{DoxyCompactList}\item 
+\hypertarget{structsteer_1_1_vector2_a92845bc9c24cb14bbb1ae3702b626ef3}{void {\bfseries Truncate} (double max)}\label{structsteer_1_1_vector2_a92845bc9c24cb14bbb1ae3702b626ef3}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_a970134ff890ad7bf153843000a76215c}{double {\bfseries Distance} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&v2) const }\label{structsteer_1_1_vector2_a970134ff890ad7bf153843000a76215c}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_a1a6c9ab976c106ec78119178136659dd}{double {\bfseries Distance\-Sq} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&v2) const }\label{structsteer_1_1_vector2_a1a6c9ab976c106ec78119178136659dd}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_aa2379c044c2f75d22d359261316dd58d}{void {\bfseries Reflect} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&norm)}\label{structsteer_1_1_vector2_aa2379c044c2f75d22d359261316dd58d}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_addebc491cb942193b6a5699747ab75fe}{\hyperlink{structsteer_1_1_vector2}{Vector2} {\bfseries Get\-Reverse} () const }\label{structsteer_1_1_vector2_addebc491cb942193b6a5699747ab75fe}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_ae69f4a22a7d3afc6b51d940c23a9e53e}{const \hyperlink{structsteer_1_1_vector2}{Vector2} \& {\bfseries operator+=} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&rhs)}\label{structsteer_1_1_vector2_ae69f4a22a7d3afc6b51d940c23a9e53e}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_a3463f6acec1d0128e4df31e2bfe7e85d}{const \hyperlink{structsteer_1_1_vector2}{Vector2} \& {\bfseries operator-\/=} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&rhs)}\label{structsteer_1_1_vector2_a3463f6acec1d0128e4df31e2bfe7e85d}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_aae8fe5be70d98313785f7982aaa1e017}{const \hyperlink{structsteer_1_1_vector2}{Vector2} \& {\bfseries operator$\ast$=} (const double \&rhs)}\label{structsteer_1_1_vector2_aae8fe5be70d98313785f7982aaa1e017}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_a7491e13d88f2f028445fa2218b62bb03}{const \hyperlink{structsteer_1_1_vector2}{Vector2} \& {\bfseries operator/=} (const double \&rhs)}\label{structsteer_1_1_vector2_a7491e13d88f2f028445fa2218b62bb03}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_a797fa0001eaaafe3eb90a260f6320c60}{bool {\bfseries operator==} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&rhs) const }\label{structsteer_1_1_vector2_a797fa0001eaaafe3eb90a260f6320c60}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_a667ff2b4dc594a07e19f766dc83125c0}{bool {\bfseries operator!=} (const \hyperlink{structsteer_1_1_vector2}{Vector2} \&rhs) const }\label{structsteer_1_1_vector2_a667ff2b4dc594a07e19f766dc83125c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structsteer_1_1_vector2_ab7cf735c31ffd694787bf4f611691e3e}{double {\bfseries x}}\label{structsteer_1_1_vector2_ab7cf735c31ffd694787bf4f611691e3e}
+
+\item 
+\hypertarget{structsteer_1_1_vector2_a47852c01f7b228b5c18515e27ba5a394}{double {\bfseries y}}\label{structsteer_1_1_vector2_a47852c01f7b228b5c18515e27ba5a394}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 2\-D vector struct used in many steering calculations. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/Vector2.\-hpp\end{DoxyCompactItemize}

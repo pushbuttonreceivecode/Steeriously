@@ -1,0 +1,334 @@
+\hypertarget{classsteer_1_1_super_component}{\section{steer\-:\-:Super\-Component Class Reference}
+\label{classsteer_1_1_super_component}\index{steer\-::\-Super\-Component@{steer\-::\-Super\-Component}}
+}
+
+
+An example implementation of the an agent with every steering behavior implemented.  
+
+
+
+
+{\ttfamily \#include $<$Super\-Component.\-hpp$>$}
+
+Inheritance diagram for steer\-:\-:Super\-Component\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsteer_1_1_super_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_super_component_a68178cb95e90ba293dbadc23a4f3059c}{{\bfseries Super\-Component} (\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$params)}\label{classsteer_1_1_super_component_a68178cb95e90ba293dbadc23a4f3059c}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a694aa0c8a460e55f6528469c5b0472fe}{void {\bfseries set\-Params} (\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$params)}\label{classsteer_1_1_super_component_a694aa0c8a460e55f6528469c5b0472fe}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_aa2c67084990f7bf55d2145d11a10c7b1}{\hyperlink{structsteer_1_1_behavior_parameters}{steer\-::\-Behavior\-Parameters} $\ast$ {\bfseries get\-Params} ()}\label{classsteer_1_1_super_component_aa2c67084990f7bf55d2145d11a10c7b1}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a33741a52ba737cf3e9cfd57b4a57aebd}{void {\bfseries Update} (float dt)}\label{classsteer_1_1_super_component_a33741a52ba737cf3e9cfd57b4a57aebd}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a41007b4652393a035e711e24020e7f4d}{float \hyperlink{classsteer_1_1_super_component_a41007b4652393a035e711e24020e7f4d}{get\-Rotation} ()}\label{classsteer_1_1_super_component_a41007b4652393a035e711e24020e7f4d}
+
+\begin{DoxyCompactList}\small\item\em Get the value of the seek component rotation. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a21670f6217c1146ecbe2e7f634191987}{void {\bfseries set\-Neighbors} (std\-::vector$<$ \hyperlink{classsteer_1_1_super_component}{Super\-Component} $\ast$ $>$ $\ast$n)}\label{classsteer_1_1_super_component_a21670f6217c1146ecbe2e7f634191987}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a979f008e0d633b227b86341866f86a82}{std\-::vector$<$ \hyperlink{classsteer_1_1_super_component}{Super\-Component} $\ast$ $>$ $\ast$ {\bfseries get\-Neighbors} ()}\label{classsteer_1_1_super_component_a979f008e0d633b227b86341866f86a82}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ab5455f34959000eef1388e95784a9fa7}{void {\bfseries set\-Obstacles} (std\-::vector$<$ \hyperlink{classsteer_1_1_sphere_obstacle}{Sphere\-Obstacle} $\ast$ $>$ $\ast$o)}\label{classsteer_1_1_super_component_ab5455f34959000eef1388e95784a9fa7}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_acd456febc86a0219468d1089479dc28e}{std\-::vector$<$ \hyperlink{classsteer_1_1_sphere_obstacle}{Sphere\-Obstacle} $\ast$ $>$ $\ast$ {\bfseries get\-Obstacles} ()}\label{classsteer_1_1_super_component_acd456febc86a0219468d1089479dc28e}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a8b708b58692f7aa2470869b8eb6662dc}{void {\bfseries set\-Walls} (std\-::vector$<$ \hyperlink{classsteer_1_1_wall}{Wall} $\ast$ $>$ $\ast$w)}\label{classsteer_1_1_super_component_a8b708b58692f7aa2470869b8eb6662dc}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a7b50fa401c00db5e8789dcece3e5f2df}{std\-::vector$<$ \hyperlink{classsteer_1_1_wall}{Wall} $\ast$ $>$ $\ast$ {\bfseries get\-Walls} ()}\label{classsteer_1_1_super_component_a7b50fa401c00db5e8789dcece3e5f2df}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a578bdae087432fc8da1a2d41e9050c43}{void {\bfseries set\-Path} (\hyperlink{classsteer_1_1_path}{steer\-::\-Path} $\ast$p)}\label{classsteer_1_1_super_component_a578bdae087432fc8da1a2d41e9050c43}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a9d3710528fcbcc4a20cfd3f03172e07e}{\hyperlink{classsteer_1_1_path}{steer\-::\-Path} $\ast$ {\bfseries get\-Path} () const }\label{classsteer_1_1_super_component_a9d3710528fcbcc4a20cfd3f03172e07e}
+
+\item 
+virtual bool \hyperlink{classsteer_1_1_super_component_a6d4b33b6f838d89216e11d8f2a427f58}{on} (\hyperlink{namespacesteer_afe6e72f8f8088962727051501181acbe}{steer\-::behavior\-Type} behavior) override
+\begin{DoxyCompactList}\small\item\em This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a95a9461aaa2c9d2ec66e2d39e982860f}{void {\bfseries alignment\-On} ()}\label{classsteer_1_1_super_component_a95a9461aaa2c9d2ec66e2d39e982860f}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a21047d726697e82d5ab3ec30a985549f}{void {\bfseries separation\-On} ()}\label{classsteer_1_1_super_component_a21047d726697e82d5ab3ec30a985549f}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a034287ad0a55f8b2487de596de12d4ce}{void {\bfseries cohesion\-On} ()}\label{classsteer_1_1_super_component_a034287ad0a55f8b2487de596de12d4ce}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a9533038d2966b62c5bdcf97df25be42d}{void {\bfseries seek\-On} ()}\label{classsteer_1_1_super_component_a9533038d2966b62c5bdcf97df25be42d}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_aad1e8e1fe693457ca79e2b7dde1127ee}{void {\bfseries wander\-On} ()}\label{classsteer_1_1_super_component_aad1e8e1fe693457ca79e2b7dde1127ee}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a77f7d90c5f771385e6736078b98123b6}{void {\bfseries wall\-Avoidance\-On} ()}\label{classsteer_1_1_super_component_a77f7d90c5f771385e6736078b98123b6}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a5c9e56e9ba1ae2149961805602ae81d5}{void {\bfseries obstacle\-Avoidance\-On} ()}\label{classsteer_1_1_super_component_a5c9e56e9ba1ae2149961805602ae81d5}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a7acbabf640a1085bd85b9e5bad76afbd}{void {\bfseries pursuit\-On} ()}\label{classsteer_1_1_super_component_a7acbabf640a1085bd85b9e5bad76afbd}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a4dee8de9baec1cae50796a094c53ff98}{void {\bfseries offset\-Pursuit\-On} ()}\label{classsteer_1_1_super_component_a4dee8de9baec1cae50796a094c53ff98}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a8069592955f7feb75bdaf739775a53c9}{void {\bfseries interpose\-On} ()}\label{classsteer_1_1_super_component_a8069592955f7feb75bdaf739775a53c9}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a55aec2df40a718860690301807399ebc}{void {\bfseries hide\-On} ()}\label{classsteer_1_1_super_component_a55aec2df40a718860690301807399ebc}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_afba2bd6ea6718e473a23f6b09e1d55a1}{void {\bfseries path\-Following\-On} ()}\label{classsteer_1_1_super_component_afba2bd6ea6718e473a23f6b09e1d55a1}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a692529db7b98c4dd941832e1c4447605}{void {\bfseries flee\-On} ()}\label{classsteer_1_1_super_component_a692529db7b98c4dd941832e1c4447605}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ae1356421fe88898957c2da286b1f5b57}{void {\bfseries evade\-On} ()}\label{classsteer_1_1_super_component_ae1356421fe88898957c2da286b1f5b57}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ad56441a92cff5e56290c42cd3468a62a}{void {\bfseries arrive\-On} ()}\label{classsteer_1_1_super_component_ad56441a92cff5e56290c42cd3468a62a}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_aa4ebb59a05f6d76db805b1ad32959632}{void {\bfseries cohesion\-Off} ()}\label{classsteer_1_1_super_component_aa4ebb59a05f6d76db805b1ad32959632}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a433925dc720bf74738bd3ead6cefccd9}{void {\bfseries separation\-Off} ()}\label{classsteer_1_1_super_component_a433925dc720bf74738bd3ead6cefccd9}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a4a865469f2d39bbcef709c7532a0169a}{void {\bfseries alignment\-Off} ()}\label{classsteer_1_1_super_component_a4a865469f2d39bbcef709c7532a0169a}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a0540d3adfae4dc6c5a4fb1a9b821adae}{void {\bfseries seek\-Off} ()}\label{classsteer_1_1_super_component_a0540d3adfae4dc6c5a4fb1a9b821adae}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a73982065c3eb3e6d4e0335360f37fbb8}{void {\bfseries wander\-Off} ()}\label{classsteer_1_1_super_component_a73982065c3eb3e6d4e0335360f37fbb8}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a8a0ff1ca0ce03cae2c2885051d53bc75}{void {\bfseries wall\-Avoidance\-Off} ()}\label{classsteer_1_1_super_component_a8a0ff1ca0ce03cae2c2885051d53bc75}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a2574a6257fd6dbd4460cf6ed77cb8d28}{void {\bfseries obstacle\-Avoidance\-Off} ()}\label{classsteer_1_1_super_component_a2574a6257fd6dbd4460cf6ed77cb8d28}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a802631fd878ce6c2967570605c7f987d}{void {\bfseries pursuit\-Off} ()}\label{classsteer_1_1_super_component_a802631fd878ce6c2967570605c7f987d}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ac4e0a4756ad7775d3d01de7e406e8272}{void {\bfseries offset\-Pursuit\-Off} ()}\label{classsteer_1_1_super_component_ac4e0a4756ad7775d3d01de7e406e8272}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a3f45f753eddeb97abfbc29b4a1f77b75}{void {\bfseries interpose\-Off} ()}\label{classsteer_1_1_super_component_a3f45f753eddeb97abfbc29b4a1f77b75}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ab1de0a298d5dfecca12d1f17afaf574b}{void {\bfseries hide\-Off} ()}\label{classsteer_1_1_super_component_ab1de0a298d5dfecca12d1f17afaf574b}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_aa7448c45c3f81bd5b0a24d9e6e50ffbc}{void {\bfseries path\-Following\-Off} ()}\label{classsteer_1_1_super_component_aa7448c45c3f81bd5b0a24d9e6e50ffbc}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_af4f642a12cfdfd66bae01e964c65f969}{void {\bfseries flee\-Off} ()}\label{classsteer_1_1_super_component_af4f642a12cfdfd66bae01e964c65f969}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ad426e19bff42b63aefd3f475d9defef9}{void {\bfseries evade\-Off} ()}\label{classsteer_1_1_super_component_ad426e19bff42b63aefd3f475d9defef9}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a618abbb400ecc0aa2d16324aace4346d}{void {\bfseries arrive\-Off} ()}\label{classsteer_1_1_super_component_a618abbb400ecc0aa2d16324aace4346d}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_af37bdcdae8312d2861fcadefff86750c}{bool {\bfseries is\-Cohesion\-On} ()}\label{classsteer_1_1_super_component_af37bdcdae8312d2861fcadefff86750c}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a7fd525d297e525111f00bba036b8265a}{bool {\bfseries is\-Separation\-On} ()}\label{classsteer_1_1_super_component_a7fd525d297e525111f00bba036b8265a}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a6ab1d4070e643d853869dc657138d2bd}{bool {\bfseries is\-Alignment\-On} ()}\label{classsteer_1_1_super_component_a6ab1d4070e643d853869dc657138d2bd}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_add7c3aecb593103f9f55d337d3add830}{bool {\bfseries is\-Seek\-On} ()}\label{classsteer_1_1_super_component_add7c3aecb593103f9f55d337d3add830}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_adf0459eb6fbf34b8b949abdc8eba2eb4}{bool {\bfseries is\-Wander\-On} ()}\label{classsteer_1_1_super_component_adf0459eb6fbf34b8b949abdc8eba2eb4}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a6f0f9abb497f25ba64130dca199facad}{bool {\bfseries is\-Wall\-Avoidance\-On} ()}\label{classsteer_1_1_super_component_a6f0f9abb497f25ba64130dca199facad}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a97ad5a6170d4f68a526eda3f2dfdf420}{bool {\bfseries is\-Obstacle\-Avoidance\-On} ()}\label{classsteer_1_1_super_component_a97ad5a6170d4f68a526eda3f2dfdf420}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a3d09457f210e696ce693c9c04f5c36d6}{bool {\bfseries is\-Flocking\-On} ()}\label{classsteer_1_1_super_component_a3d09457f210e696ce693c9c04f5c36d6}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a293c72beedcbc14b85705f8c9ecd233b}{bool {\bfseries is\-Pursuit\-On} ()}\label{classsteer_1_1_super_component_a293c72beedcbc14b85705f8c9ecd233b}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a1cba3443583722a5cdf2501cb0ff679c}{bool {\bfseries is\-Offset\-Pursuit\-On} ()}\label{classsteer_1_1_super_component_a1cba3443583722a5cdf2501cb0ff679c}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_aea3b652a3ab5288e4a7c6a7dd47dc4bb}{bool {\bfseries is\-Interpose\-On} ()}\label{classsteer_1_1_super_component_aea3b652a3ab5288e4a7c6a7dd47dc4bb}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_acabab07d95095686aa7a7bf4b6325e35}{bool {\bfseries is\-Hide\-On} ()}\label{classsteer_1_1_super_component_acabab07d95095686aa7a7bf4b6325e35}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a694ef730d59e91fb019835cd6c7d32cf}{bool {\bfseries is\-Path\-Following\-On} ()}\label{classsteer_1_1_super_component_a694ef730d59e91fb019835cd6c7d32cf}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a68819a55f2b757ca855c2317e125b829}{bool {\bfseries is\-Flee\-On} ()}\label{classsteer_1_1_super_component_a68819a55f2b757ca855c2317e125b829}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a7598a658f5ce09f8272f2ded8ca394cf}{bool {\bfseries is\-Evade\-On} ()}\label{classsteer_1_1_super_component_a7598a658f5ce09f8272f2ded8ca394cf}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a7ef0e1e6e643e06ed558b68e306c6ffa}{bool {\bfseries is\-Arrive\-On} ()}\label{classsteer_1_1_super_component_a7ef0e1e6e643e06ed558b68e306c6ffa}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_aa3368b5600e8de4450e9c6b6db557f81}{void {\bfseries flocking\-On} ()}\label{classsteer_1_1_super_component_aa3368b5600e8de4450e9c6b6db557f81}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ab92db6c53f2a4454ab762be90af53d07}{void {\bfseries flocking\-Off} ()}\label{classsteer_1_1_super_component_ab92db6c53f2a4454ab762be90af53d07}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_acd094527592bddd27b80b30026f0f474}{bool {\bfseries target\-Acquired} ()}\label{classsteer_1_1_super_component_acd094527592bddd27b80b30026f0f474}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a0664f84f96494841f4f0da7a11d299ea}{void {\bfseries set\-Evade\-Agent} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$a)}\label{classsteer_1_1_super_component_a0664f84f96494841f4f0da7a11d299ea}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a4526494dd5beb03038495e0d23ef9f5a}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Evade\-Agent} () const }\label{classsteer_1_1_super_component_a4526494dd5beb03038495e0d23ef9f5a}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a7aeb081585a3126c91468184b1485d39}{void {\bfseries set\-Pursuit\-Agent} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$a)}\label{classsteer_1_1_super_component_a7aeb081585a3126c91468184b1485d39}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_abde4df825e54ee1b7dd612947182c73c}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Pursuit\-Agent} () const }\label{classsteer_1_1_super_component_abde4df825e54ee1b7dd612947182c73c}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ac6e8260adba8788734c07fabcd1d846a}{void {\bfseries set\-Leader} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$l)}\label{classsteer_1_1_super_component_ac6e8260adba8788734c07fabcd1d846a}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a50f71ec70224b10c71241ef7bbdcabe4}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Leader} () const }\label{classsteer_1_1_super_component_a50f71ec70224b10c71241ef7bbdcabe4}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_af024f5ae5b4d77e93a576806be160903}{void {\bfseries set\-Interpose\-Agents} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$a, \hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$b)}\label{classsteer_1_1_super_component_af024f5ae5b4d77e93a576806be160903}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ad9e2774c665eec1727f2cd0ddd763705}{void {\bfseries set\-Interpose\-Agent\-A} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$a)}\label{classsteer_1_1_super_component_ad9e2774c665eec1727f2cd0ddd763705}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a98d56c5408bf60bdb6f4a60194e94564}{void {\bfseries set\-Interpose\-Agent\-B} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$b)}\label{classsteer_1_1_super_component_a98d56c5408bf60bdb6f4a60194e94564}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a43f0c97eab839cf58023b9228a37f65c}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Interpose\-Agent\-A} () const }\label{classsteer_1_1_super_component_a43f0c97eab839cf58023b9228a37f65c}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a6b5c49bf65787f4018617a190da00c09}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Interpose\-Agent\-B} () const }\label{classsteer_1_1_super_component_a6b5c49bf65787f4018617a190da00c09}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ae26c82ac84ec2ec52efe741bb842b736}{void {\bfseries set\-Hide\-Agent} (\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$a)}\label{classsteer_1_1_super_component_ae26c82ac84ec2ec52efe741bb842b736}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_ad3e3d4efee10538f61b36df6d7512381}{\hyperlink{classsteer_1_1_agent}{steer\-::\-Agent} $\ast$ {\bfseries get\-Hide\-Agent} () const }\label{classsteer_1_1_super_component_ad3e3d4efee10538f61b36df6d7512381}
+
+\item 
+\hypertarget{classsteer_1_1_super_component_a934b715dfccce23a5cec1f6e462f985c}{virtual \hyperlink{structsteer_1_1_vector2}{Vector2} \hyperlink{classsteer_1_1_super_component_a934b715dfccce23a5cec1f6e462f985c}{Calculate} () override}\label{classsteer_1_1_super_component_a934b715dfccce23a5cec1f6e462f985c}
+
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating the steering vector. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_ace499f2a223579802a562c4fa91d677b}{virtual \hyperlink{structsteer_1_1_vector2}{Vector2} {\bfseries calculate\-Weighted\-Sum} () override}\label{classsteer_1_1_super_component_ace499f2a223579802a562c4fa91d677b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsteer_1_1_super_component_aaced68de7b8442857e548a9a3c6db1e3}{float \hyperlink{classsteer_1_1_super_component_aaced68de7b8442857e548a9a3c6db1e3}{m\-\_\-weight\-Seek}}\label{classsteer_1_1_super_component_aaced68de7b8442857e548a9a3c6db1e3}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the seeking behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_ac9472b29bf3a879877bb89904671a90a}{float \hyperlink{classsteer_1_1_super_component_ac9472b29bf3a879877bb89904671a90a}{m\-\_\-weight\-Flee}}\label{classsteer_1_1_super_component_ac9472b29bf3a879877bb89904671a90a}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the fleeing behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a17fd146cff611cfd6d01dafca41e454e}{float \hyperlink{classsteer_1_1_super_component_a17fd146cff611cfd6d01dafca41e454e}{m\-\_\-weight\-Arrive}}\label{classsteer_1_1_super_component_a17fd146cff611cfd6d01dafca41e454e}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the arriving behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a145b3e02c139711b4137c0270116a621}{float \hyperlink{classsteer_1_1_super_component_a145b3e02c139711b4137c0270116a621}{m\-\_\-weight\-Pursuit}}\label{classsteer_1_1_super_component_a145b3e02c139711b4137c0270116a621}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the pursuing behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_ac5d3901b71460a9058237289148ec9b3}{float \hyperlink{classsteer_1_1_super_component_ac5d3901b71460a9058237289148ec9b3}{m\-\_\-weight\-Evade}}\label{classsteer_1_1_super_component_ac5d3901b71460a9058237289148ec9b3}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the evading behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a10d96235f4dc1b8f94e493cfb4467a87}{float \hyperlink{classsteer_1_1_super_component_a10d96235f4dc1b8f94e493cfb4467a87}{m\-\_\-weight\-Interpose}}\label{classsteer_1_1_super_component_a10d96235f4dc1b8f94e493cfb4467a87}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the interposing behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a478260491716990f52554d9afb914bfe}{float \hyperlink{classsteer_1_1_super_component_a478260491716990f52554d9afb914bfe}{m\-\_\-weight\-Hide}}\label{classsteer_1_1_super_component_a478260491716990f52554d9afb914bfe}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the hiding behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a5271df7b865469ee56b9aca54ac07fe1}{float \hyperlink{classsteer_1_1_super_component_a5271df7b865469ee56b9aca54ac07fe1}{m\-\_\-weight\-Offset\-Pursuit}}\label{classsteer_1_1_super_component_a5271df7b865469ee56b9aca54ac07fe1}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the offset pursuit behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a0d14d90f7ad370e3e64abeed5eaaa459}{float \hyperlink{classsteer_1_1_super_component_a0d14d90f7ad370e3e64abeed5eaaa459}{m\-\_\-weight\-Wander}}\label{classsteer_1_1_super_component_a0d14d90f7ad370e3e64abeed5eaaa459}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the wander behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_aae596167a99efd22caee49eda457b4d1}{float \hyperlink{classsteer_1_1_super_component_aae596167a99efd22caee49eda457b4d1}{m\-\_\-weight\-Alignment}}\label{classsteer_1_1_super_component_aae596167a99efd22caee49eda457b4d1}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the alignment behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a6a40ec5da6af1b7f36ba023c28456972}{float \hyperlink{classsteer_1_1_super_component_a6a40ec5da6af1b7f36ba023c28456972}{m\-\_\-weight\-Separation}}\label{classsteer_1_1_super_component_a6a40ec5da6af1b7f36ba023c28456972}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the separation behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_af026be44b85a808ebf9eca9e8bb2f070}{float \hyperlink{classsteer_1_1_super_component_af026be44b85a808ebf9eca9e8bb2f070}{m\-\_\-weight\-Cohesion}}\label{classsteer_1_1_super_component_af026be44b85a808ebf9eca9e8bb2f070}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the cohesion behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_ab38d5c6fa86e882bef3258d4ee5542f4}{float \hyperlink{classsteer_1_1_super_component_ab38d5c6fa86e882bef3258d4ee5542f4}{m\-\_\-weight\-Obstacle\-Avoidance}}\label{classsteer_1_1_super_component_ab38d5c6fa86e882bef3258d4ee5542f4}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the obstacle avoidance behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_a801a719fc8fcec34ec4a8ef0b6c11800}{float \hyperlink{classsteer_1_1_super_component_a801a719fc8fcec34ec4a8ef0b6c11800}{m\-\_\-weight\-Wall\-Avoidance}}\label{classsteer_1_1_super_component_a801a719fc8fcec34ec4a8ef0b6c11800}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the wall avoidance behavior. \end{DoxyCompactList}\item 
+\hypertarget{classsteer_1_1_super_component_aab01c9677fa02f20cccb8a7c74a8c7a8}{float \hyperlink{classsteer_1_1_super_component_aab01c9677fa02f20cccb8a7c74a8c7a8}{m\-\_\-weight\-Path\-Following}}\label{classsteer_1_1_super_component_aab01c9677fa02f20cccb8a7c74a8c7a8}
+
+\begin{DoxyCompactList}\small\item\em Multiplier -\/ can be adjusted to effect strength of the \hyperlink{classsteer_1_1_path}{Path} Following behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An example implementation of the an agent with every steering behavior implemented. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsteer_1_1_super_component_a6d4b33b6f838d89216e11d8f2a427f58}{\index{steer\-::\-Super\-Component@{steer\-::\-Super\-Component}!on@{on}}
+\index{on@{on}!steer::SuperComponent@{steer\-::\-Super\-Component}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool steer\-::\-Super\-Component\-::on (
+\begin{DoxyParamCaption}
+\item[{{\bf steer\-::behavior\-Type}}]{behavior}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classsteer_1_1_super_component_a6d4b33b6f838d89216e11d8f2a427f58}
+
+
+This pure virtual function tests if a specific bit of m\-\_\-i\-Flags is set using bitwise operations. Must be overridden in derived classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & -\/ enum behavior\-Type. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classsteer_1_1_agent_a707204e49e6519c7a8ea0f3ded608d98}{steer\-::\-Agent}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/steeriously/components/Super\-Component.\-hpp\item 
+src/steeriously/components/Super\-Component.\-cpp\end{DoxyCompactItemize}
