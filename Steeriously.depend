@@ -671,7 +671,7 @@
 	<steeriously/Wall.hpp>
 	<steeriously/components/WanderComponent.hpp>
 
-1512924684 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\agent.hpp
+1512948898 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\agent.hpp
 	<vector>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/Utilities.hpp>
@@ -692,7 +692,7 @@
 	<cassert>
 	<iomanip>
 
-1512924845 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\vector2.hpp
+1512948984 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\vector2.hpp
 	<math.h>
 	<iosfwd>
 	<limits>
@@ -705,7 +705,7 @@
 1512924768 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\sphereobstacle.hpp
 	<steeriously/Vector2.hpp>
 
-1512924914 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\arrivecomponent.hpp
+1512935386 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\arrivecomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
@@ -733,19 +733,19 @@
 	<steeriously/Utilities.hpp>
 	<steeriously/Vector2.hpp>
 
-1512924925 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\evadecomponent.hpp
+1512935440 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\evadecomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
 	<steeriously/Vector2.hpp>
 
-1512924934 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\fleecomponent.hpp
+1512935516 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\fleecomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
 	<steeriously/Vector2.hpp>
 
-1512924941 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\flockingcomponent.hpp
+1512935595 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\flockingcomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/SphereObstacle.hpp>
 	<steeriously/Wall.hpp>
@@ -757,19 +757,19 @@
 1512924711 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\geometryhelpers.hpp
 	<steeriously/VectorMath.hpp>
 
-1512924949 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\hidecomponent.hpp
+1512948600 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\hidecomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
 	<steeriously/Vector2.hpp>
 
-1512924956 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\interposecomponent.hpp
+1512948624 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\interposecomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
 	<steeriously/Vector2.hpp>
 
-1512924968 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\offsetpursuitcomponent.hpp
+1512948651 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\offsetpursuitcomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
@@ -781,29 +781,29 @@
 	<cassert>
 	<steeriously/Vector2.hpp>
 
-1512924977 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\pathfollowingcomponent.hpp
+1512948675 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\pathfollowingcomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
 	<steeriously/Path.hpp>
 	<steeriously/Vector2.hpp>
 
-1512924986 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\pursuitcomponent.hpp
+1512948696 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\pursuitcomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
 	<steeriously/Vector2.hpp>
 
-1512924995 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\seekcomponent.hpp
+1512948717 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\seekcomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>
 	<steeriously/Vector2.hpp>
 
-1512925004 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\supercomponent.hpp
+1512948745 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\supercomponent.hpp
 	<steeriously/libinc.hpp>
 
-1512925027 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\wandercomponent.hpp
+1512948765 c:\users\markpy\desktop\programming\libraries\steeriously\include\steeriously\components\wandercomponent.hpp
 	<steeriously/Agent.hpp>
 	<steeriously/BehaviorData.hpp>
 	<steeriously/BehaviorHelpers.hpp>

@@ -3,10 +3,10 @@
 #include <SFML/Graphics.hpp>
 #include <steeriously/libinc.hpp>
 
-const int WINDOWX = 1768;
-const int WINDOWY = 992;
+const int WINDOWX = 800;
+const int WINDOWY = 600;
 const double WALLPADDING = 20.0;
-const int OBSTACLES = 100;
+const int OBSTACLES = 50;
 const int MINRADIUS = 10.f;
 const int MAXRADIUS = 15.f;
 const int MAXITERS = 2000;
