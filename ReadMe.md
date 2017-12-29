@@ -55,7 +55,7 @@ The components I implemented should give you what you need to implement your own
 are certainly things you can do much differently than what is provided in the example
 components.
 
-More information, tutorials, and demos along with API documentation are available at [project homepage](http://pushbuttonreceivecode.com).
+More information, tutorials, and demos along with API documentation are available at [pushbuttonreceivecode.com](http://pushbuttonreceivecode.com).
 
 Steeriously does not use a build file. However, you can simply place the files in your project and add
 include paths accordingly using your favorite IDE. Documentation will need built with Doxygen - just issue the doxygen command on the steeriously.doxy file via command line.
