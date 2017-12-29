@@ -57,7 +57,5 @@ components.
 
 More information, tutorials, and demos along with API documentation are available at [project homepage](http://pushbuttonreceivecode.com).
 
-Steeriously does not use a build system. However, you can simply place the files in your project and add
-include paths accordingly using your favorite IDE. Documentation is already built - that is why the file
-size may seem rather large. If for any reason you need to rebuild the docs, just issue the doxygen command on the
-steeriously.doxy file via command line.
+Steeriously does not use a build file. However, you can simply place the files in your project and add
+include paths accordingly using your favorite IDE. Documentation will need built with Doxygen - just issue the doxygen command on the steeriously.doxy file via command line.
