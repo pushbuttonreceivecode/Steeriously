@@ -11,7 +11,7 @@ I can't recommend the book enough - you can buy the book here:
 Steeriously has one humble goal - to make steering behavior accessible and fun to program.
 One way to achieve this is by redesigning the original code to expose a more general purpose API.
 Tutorials and examples for using this library are available at:
-[PushButtonReceiveCode.com](http://pushbuttonreceivecode.com) 
+[https://code.markrichards.ninja/cpp](https://code.markrichards.ninja/cpp) 
 
 ## Features include components for the following steering behaviors:
 
@@ -55,7 +55,7 @@ The components I implemented should give you what you need to implement your own
 are certainly things you can do much differently than what is provided in the example
 components.
 
-More information, tutorials, and demos along with API documentation are available at [pushbuttonreceivecode.com](http://pushbuttonreceivecode.com).
+More information, tutorials, and demos along with API documentation are available at [https://code.markrichards.ninja/cpp](https://code.markrichards.ninja/cpp).
 
 Steeriously does not use a build file. However, you can simply place the files in your project and add
 include paths accordingly using your favorite IDE. Documentation will need built with Doxygen - just issue the doxygen command on the steeriously.doxy file via command line.
